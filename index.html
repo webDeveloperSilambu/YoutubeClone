@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    
+</head>
+<body id="body">
+    <div class="preloader" id="preloader">
+        <div class="loader" id="loader">
+            <img src="images/load.webp" alt="" srcset="">
+        </div>
+    </div>
+    <header>
+        <div class="logoContainer">
+            <button id="navBtn" data="open" onclick="navOpen()"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" srcset="">
+                <h1>YouTube</h1>
+            </div>
+        </div>
+
+        <div class="searchContainer">
+            <div class="searchBox">
+                <input type="text" name="" autocomplete="off" id="inputData" placeholder="search">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+
+            <div class="search-result"></div>
+        </div>
+
+        <div class="profileContainer">
+            <button><i class="fa-solid fa-video"></i></button>
+            <button><i class="fa-regular fa-bell"></i></button>
+            <button onclick="settings()"><img src="images/lion.jpg" alt=""></button>
+            
+            <div class="acContainer" style="display: none;">
+                <div class="acHead">
+                   <img src="images/lion.jpg" alt="">
+                    <div>
+                        <h2>silambu</h2>
+                        <p>@silambuhacker</p>
+                        <p><a href="/">View your channel</a></p>
+                    </div>
+                </div>
+                <ul class="acc1 acc">
+                    <li><a href="#">
+                        <i class="fa-solid fa-microphone"></i><p>google account</p></a>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>switch account</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>signout</p></a></li>
+                </ul>
+                <ul class="acc2 acc">
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>Youtube studio</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>purchase and memberships</p></a></li>
+                </ul>
+                <ul class="acc3 acc">  
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>Your data in youtube</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>Appearence : Device themes</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>Language : english</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>Restricted mode : of</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>location : india</p></a></li><li><a href="#"><i class="fa-solid fa-microphone"></i><p>Keyboard shortcuts</p></a></li>
+                </ul> 
+                <ul class="acc4 acc">
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>settings</p></a></li>
+                </ul>
+                <ul class="acc5 acc">
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>help</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-microphone"></i><p>send feedback</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="mainContainer">
+        <div class="navContainer">
+            <ul class="navBar nav-content">
+                <li><i class="fa-solid fa-house"></i><p>Home</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Shorts</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>Subscriptions</p></li>
+            </ul>
+
+            <ul class="youContainer nav-content">
+                <li><h2>You</h2></li>
+                <li><i class="fa-solid fa-house"></i><p>Your Channel</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>History</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>playlist</p></li>
+                <li><i class="fa-solid fa-house"></i><p>Your video</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>watch later</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Liked videos</p></li>
+            </ul>
+
+            <ul class="subsContainer nav-content">
+                <li><h2>Subscription</h2></li>
+                <li><i class="fa-solid fa-house"></i><p>Kattrathu kaiyalavu</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Madhan</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>cricket</p></li>
+            </ul>
+
+            <ul class="exContainer nav-content">
+                <li><h2>Explore</h2></li>
+                <li><i class="fa-solid fa-house"></i><p>Trending</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Sopping</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>Movie</p></li>
+                <li><i class="fa-solid fa-house"></i><p>Trending</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Sopping</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>Movie</p></li>
+                <li><i class="fa-solid fa-house"></i><p>Trending</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Sopping</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>Movie</p></li>
+                <li><i class="fa-solid fa-house"></i><p>Trending</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>Sopping</p></li>
+            </ul>
+
+            
+            <ul class="moreContainer nav-content">
+                <li><h2>More from youtube</h2></li>
+                <li><i class="fa-solid fa-house"></i><p>Youtube premium</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>youtube mmusic</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>youtube kids</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>youtube kids</p></li>
+            </ul>
+
+            <ul class="setContainer nav-content">
+                <li><i class="fa-solid fa-house"></i><p>settings</p></li>
+                <li><i class="fa-brands fa-shirtsinbulk"></i><p>help</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>report history</p></li>
+                <li><i class="fa-solid fa-clapperboard"></i><p>feedback</p></li>
+            </ul>
+
+            <ul class="aboutContainer nav-content">
+                <li>
+                    <p><a href="#">About</a><a href="#">terms</a></p>
+                    <p><a href="#">About</a><a href="#">terms</a></p>
+                    <p><a href="#">About</a><a href="#">terms</a></p>
+                </li>
+                <li>
+                   <p><a href="#">About</a><a href="#">terms</a></p>
+                    <p><a href="#">About</a><a href="#">terms</a></p>
+                    <p><a href="#">About</a><a href="#">terms</a></p> 
+                </li>
+            </ul>
+            <footer>
+                <p>© 2024 Google LLC</p>
+            </footer>
+
+    </div>
+
+<!---------------------------Home Container------------------->
+
+    <div class="homeContainer">
+        <!-------------------------Video Title container-------------->
+        <ul class="headContainer" >
+            <li>all</li>
+            <li>new</li>
+            <li>trend</li>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>python</li>
+            <li>c</li>
+            <li>c++</li>
+            <li>java</li>
+            <li>blockchain</li>
+        </ul>
+       
+        <!----------------------Video Container------------------>
+        <div class="videoContainer">
+            <!-------From app.JS-------->
+        </div>
+
+        <div class="shortsContainer">
+            <h1>shorts</h1>
+            <div class="shortContents">
+                <!-------From app.JS--------->
+            </div>
+        </div>
+
+
+    </div>
+
+    </section>
+</body>
+</html>
